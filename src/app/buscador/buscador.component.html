@@ -1,0 +1,6 @@
+<input
+    [(ngModel)]="terminoBusqueda"
+    type="text"
+    placeholder="Buscar GIFs..."
+    (keyup.enter)="buscar()" />
+<button (click)="buscar()">Buscar</button>

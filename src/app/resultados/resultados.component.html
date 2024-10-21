@@ -1,0 +1,11 @@
+<div class="contnt-gifs">
+  <div class="album" *ngIf="resultados && resultados.length; else noResults">
+    <div class="card" *ngFor="let resultado of resultados">
+      <img [src]="resultado.images.fixed_height.url" [alt]="resultado.title" />
+      <p>{{ resultado.title }}</p>
+    </div>
+  </div>
+  <ng-template #noResults>
+    <p>No se encontraron resultados.</p>
+  </ng-template>
+</div>

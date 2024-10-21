@@ -1,0 +1,24 @@
+.contnt-app{
+    display: grid;
+    grid-template-columns: 15rem 1fr;
+}
+.contnt-info{
+    display: grid;
+    grid-template-rows: 2.5rem 1fr;
+    background-color: rgb(51, 51, 51);
+}
+.logo{
+    color: white;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+.contnt-gifs{
+    padding: 1rem;
+}
+@media (max-width: 768px) {
+    .contnt-app {
+        grid-template-columns: 9rem 1fr;
+    }
+}

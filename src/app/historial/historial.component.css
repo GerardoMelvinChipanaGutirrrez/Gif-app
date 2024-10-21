@@ -1,0 +1,24 @@
+.historial-container {
+  width: 90%;  /* Ancho del contenedor del historial */
+  padding: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  /* Sombra */
+  overflow-y: auto;  /* Permite el desplazamiento vertical si hay demasiados elementos */
+  height: calc(100vh - 60px);  /* Altura ajustada */
+}
+ul {
+  list-style-type: none;  /* Sin viñetas */
+  padding-top: 1rem;  /* Sin padding */
+}
+li {
+
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;  /* Indica que el elemento es clickeable */
+  padding: 5px;  /* Espaciado */
+  border: 1px solid #ccc;  /* Bordes */
+  margin-bottom: 5px;  /* Espacio entre elementos */
+  transition: background-color 0.3s;  /* Transición suave al cambiar el color de fondo */
+}
+li:hover {
+  background-color: #bdbdbd;  /* Color al pasar el mouse */
+}

@@ -1,0 +1,50 @@
+div {
+  padding-top: 10px;
+  overflow-y: auto;
+}
+
+.contnt-gifs {
+  display: grid;
+  width: 100%;
+}
+
+.album {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 15px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+img {
+  width: 100%;  /* La imagen ocupa el 100% del contenedor */
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 14px;
+  text-align: center;
+  color: #333;
+}
+@media (max-width: 768px) {
+  .album {
+    grid-template-columns: repeat(1, 1fr); 
+  }
+}
